@@ -203,6 +203,38 @@
   }
   .stop .name { font-weight: bold; font-size: 16.5px; }
   .stop .note { font-size: 13.5px; color: var(--ink-soft); margin-top: 2px; }
+
+  /* ---------- 出発デッドライン（何時までに前の場所を出るか） ---------- */
+  .deadline {
+    margin-top: 8px;
+    background: var(--sun-soft);
+    border: 2px dashed var(--sun);
+    border-radius: 12px;
+    padding: 8px 11px;
+    font-size: 13px;
+    color: var(--ink);
+  }
+  .deadline .dl-head {
+    display: block;
+    font-weight: bold;
+    font-size: 14.5px;
+    line-height: 1.5;
+    margin-bottom: 2px;
+  }
+  .deadline .dl-limit {
+    font-weight: bold;
+    background: var(--card);
+    border-radius: 6px;
+    padding: 0 6px;
+  }
+  .deadline ol {
+    margin: 6px 0 0;
+    padding-left: 1.3em;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+  }
+  .deadline ol li { margin-top: 1px; }
+
   .stop.goal .card {
     border: 3px solid var(--day-color, var(--sun));
     background: var(--day-soft, var(--sun-soft));
@@ -498,6 +530,22 @@
         </div>
       </div>
       <div class="stop">
+        <div class="koma">🚃</div>
+        <div class="card">
+          <span class="time">13:15ごろ出発</span>
+          <div class="name">神保町 → <ruby>麻布台<rt>あざぶだい</rt></ruby>ヒルズへ（30分みておく）</div>
+          <div class="deadline">
+            <span class="dl-head">⏰ 14:00に入るには、13:15までに神保町を出る！</span>
+            どんなにおそくても <span class="dl-limit">13:40</span> がリミット（入場わくは14:30まで）。だからお昼ごはんは13:10には食べおわろう🍛
+            <ol>
+              <li>オフィス → 神保町駅 …徒歩5分</li>
+              <li>神保町 →（<ruby>都営三田線<rt>とえいみたせん</rt></ruby>）→ 日比谷 →（<ruby>日比谷線<rt>ひびやせん</rt></ruby>に乗りかえ）→ <ruby>神谷町<rt>かみやちょう</rt></ruby> …18分</li>
+              <li>神谷町駅5番出口 → ボーダレス入口 …徒歩2分（地下でつながってる）</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="stop">
         <div class="koma">🎨</div>
         <div class="card">
           <span class="time">14:00〜14:30に入場（〜16:30ごろ）</span>
@@ -565,9 +613,19 @@
       <div class="stop">
         <div class="koma">🚃</div>
         <div class="card">
-          <span class="time">08:45ごろ出発</span>
-          <div class="name">浅草 → <ruby>豊洲<rt>とよす</rt></ruby>へ</div>
-          <div class="note">電車で35分くらい。9:30の入場に間に合うよう、朝は早めに出発！</div>
+          <span class="time">08:40ごろ出発</span>
+          <div class="name">浅草 → <ruby>豊洲<rt>とよす</rt></ruby>へ（50分みておく）</div>
+          <div class="deadline">
+            <span class="dl-head">⏰ 09:30に入るには、08:40までにホテルを出る！</span>
+            どんなにおそくても <span class="dl-limit">09:00</span> がリミット（入場わくは10:00まで）。着替えのじゅんびもあるから、朝ごはんは08:25には食べおわろう🥐
+            <ol>
+              <li>ホテル → <ruby>田原町<rt>たわらまち</rt></ruby>駅（<ruby>銀座線<rt>ぎんざせん</rt></ruby>）…徒歩7分</li>
+              <li>田原町 →（銀座線・9駅）→ <ruby>銀座<rt>ぎんざ</rt></ruby> …16分</li>
+              <li><strong>銀座駅 → <ruby>銀座一丁目<rt>ぎんざいっちょうめ</rt></ruby>駅 …いったん改札を出て、地上を歩いて5分</strong>（この日いちばんの関門！はぐれないように）</li>
+              <li>銀座一丁目 →（<ruby>有楽町線<rt>ゆうらくちょうせん</rt></ruby>・3駅）→ 豊洲 …5分</li>
+              <li>豊洲駅 → プラネッツ …徒歩10分。暑かったら、ゆりかもめで<ruby>新豊洲<rt>しんとよす</rt></ruby>まで1駅乗って徒歩1分でもOK</li>
+            </ol>
+          </div>
         </div>
       </div>
       <div class="stop">
@@ -672,6 +730,22 @@
       </div>
     </div>
     <div class="road">
+      <div class="stop">
+        <div class="koma">🚃</div>
+        <div class="card">
+          <span class="time">09:05ごろ出発</span>
+          <div class="name">ホテル → <ruby>押上<rt>おしあげ</rt></ruby>（スカイツリー）へ（40分みておく）</div>
+          <div class="deadline">
+            <span class="dl-head">⏰ 10:00に入るには、09:05までにホテルを出る！</span>
+            どんなにおそくても <span class="dl-limit">09:15</span> がリミット。朝ごはん・荷づくり・チェックアウトは08:55までに終わらせよう🧳
+            <ol>
+              <li>ホテル → <ruby>三田<rt>みた</rt></ruby>駅A9出口 …徒歩5分</li>
+              <li>三田 →（<ruby>都営浅草線<rt>とえいあさくさせん</rt></ruby>・乗りかえなし）→ 押上 …23分</li>
+              <li>押上駅 → スカイツリー入口（4階）…徒歩5分＋エレベーター待ち</li>
+            </ol>
+          </div>
+        </div>
+      </div>
       <div class="stop">
         <div class="koma">💜</div>
         <div class="card quest-card">
